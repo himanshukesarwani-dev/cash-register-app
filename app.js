@@ -8,12 +8,24 @@ function validateBillAndCashAmount() {
 }
 
 checkButton.addEventListener("click", function validateBillAndCashAmount() {
-    message.style.display = "none";
+    hideMessage();
     if (billAmount.value > 0) {
-        console.log("bill amount is greater than zero")
-    } else {
-        message.style.display = "block"
-        message.innerText = "The bill amount should be greater than zero";
+     
+        console.log("bill amount is greater than zero");
+    } 
+    
+    else {
+       showMessage("Bill Amount be greater than zero. Invalid bill amount");
     }
 
 });
+
+
+function hideMessage(){
+    message.style.display = "none";
+}
+
+function showMessage(msg){
+    message.style.display = "block";
+    message.innerText = msg;
+}
