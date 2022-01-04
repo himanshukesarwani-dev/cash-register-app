@@ -41,22 +41,8 @@ function showMessage(msg) {
 
 function calculateChange(rtnAmt) {
     for (let i = 0; i < NotesAvailable.length; i++) {
-    const totalNotes = Math.trunc(rtnAmt/NotesAvailable[i]);
-    rtnAmt %= NotesAvailable[i];
-noOfNotes[i].innerHTML = totalNotes;
+        const totalNotes = Math.trunc(rtnAmt / NotesAvailable[i]);
+        rtnAmt %= NotesAvailable[i];
+        noOfNotes[i].innerHTML = totalNotes;
     }
 }
-
-
-//100
-/* 2000
-
-
-1900
-
-
-1900//2000
-1900%2000
-
-
-*/
