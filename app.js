@@ -8,10 +8,10 @@ const noOfNotes = document.querySelectorAll(".no-of-notes")
 
 checkButton.addEventListener("click", function validateBillAndCashAmount() {
     hideMessage();
-    if (billAmount.value > 0) {
+    if (parseInt(billAmount.value) > 0) {
 
 
-        if (billAmount.value > cashGiven.value) {
+        if (parseInt(billAmount.value)  > parseInt(cashGiven.value)) {
             showMessage("Pay more as your bill amount is greater than the cash you gave.")
         } else if (billAmount.value == cashGiven.value) {
             showMessage("Bill amount is exactly equal to cash given. Hence no change needed to be returned")
