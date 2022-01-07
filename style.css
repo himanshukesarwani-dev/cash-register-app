@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
- 
+
 :root {
     --primary-color: #EC255A;
 }
@@ -8,7 +8,23 @@
 
 body {
     font-family: 'Poppins', sans-serif;
- 
+
 }
 
 
+.container {
+    border: 5px solid var(--primary-color);
+    width: 80%;
+    margin: 2rem auto;
+}
+
+
+.container .heading {
+    text-align: center;
+    margin: 40px auto;
+    color: var(--primary-color)
+}
+
+.description {
+    text-align: center;
+}
