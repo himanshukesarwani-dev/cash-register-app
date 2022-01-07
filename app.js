@@ -4,6 +4,7 @@ const checkButton = document.querySelector("#check-btn");
 const message = document.querySelector("#error-message");
 const NotesAvailable = [2000, 500, 200, 100, 50, 20, 10, 5, 1];
 const noOfNotes = document.querySelectorAll(".no-of-notes")
+const captionId = document.querySelector("#id-caption")
 
 
 checkButton.addEventListener("click", function validateBillAndCashAmount() {
@@ -37,6 +38,8 @@ function showMessage(msg) {
 }
 
 function calculateChange(rtnAmt) {
+
+    captionId.innerText = "Return Change: " + rtnAmt;
     for (let i = 0; i < NotesAvailable.length; i++) {
         const totalNotes = Math.trunc(rtnAmt / NotesAvailable[i]);
         rtnAmt %= NotesAvailable[i];
