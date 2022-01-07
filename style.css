@@ -3,6 +3,7 @@
 
 :root {
     --primary-color: #EC255A;
+    --secondary-color:#575c66;
 }
 
 
@@ -26,5 +27,16 @@ body {
 }
 
 .description {
+  
     text-align: center;
 }
+
+th, td {
+    border: 2px solid var(--primary-color);
+}
+ 
+ 
+.change-table {
+    border-collapse: collapse;
+}
+ 
