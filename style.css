@@ -104,7 +104,8 @@ footer {
     padding: 10px;
 }
 
-span {
-    color: var(--primary-color);
+
+.links-without-underline {
     text-decoration: none;
+    color: var(--primary-color);
 }
