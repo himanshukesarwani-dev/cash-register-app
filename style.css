@@ -106,4 +106,5 @@ footer {
 
 span {
     color: var(--primary-color);
+    text-decoration: none;
 }
